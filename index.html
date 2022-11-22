@@ -1,0 +1,455 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/css/style.css">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <title>ecomerce</title>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+  <link rel="stylesheet" href="bootstrap.min.css">
+  <link rel="preconnect" href="https://fonts.gstatic.com">
+<link href="https://fonts.googleapis.com/css2?family=Ubuntu:wght@500&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
+    integrity="sha512-SfTiTlX6kk+qitfevl/7LibUOeJWlt9rbyDn92a1DqWOw9vWG2MFoays0sgObmWazO5BQPiFucnnEAjpAB+/Sw==" crossorigin="anonymous" />
+</head>
+<body>
+    <header>
+        <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+            <div class="container-fluid">
+              <a class="navbar-brand" href="#">Food-Shop</a>
+              <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+              </button>
+              <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="navbar-nav ml-auto mb-2 mb-lg-0">
+                  <li class="nav-item">
+                    <a class="nav-link active" aria-current="page" href="#">Home</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" href="#">Link</a>
+                  </li>
+                  
+                  <div class="dropdown">
+                    <a href="#" class="nav-link dropdown-toggle" data-toggle="dropdown">
+                      Category
+                    </a>
+                    <div class="dropdown-menu">
+                      <a class="dropdown-item" href="#">Veg Food</a>
+                      <a class="dropdown-item" href="#">Non Veg Food</a>
+                      <a class="dropdown-item" href="#">Pizza</a>
+                      <a class="dropdown-item" href="#">Burgger</a>
+                    </div>
+                  </div>
+                                    
+                  <li class="nav-item">
+                    <a class="nav-link disabled" href="#" tabindex="-1" aria-disabled="true">Disabled</a>
+                  </li>
+                </ul>
+                <form class="d-flex">
+                  <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
+                  <button class="btn btn-outline-warning" type="submit">Search</button>
+                </form>
+              </div>
+            </div>
+          </nav>
+
+          <!-- signup page start -->
+        <div class="signup card w-50 ml-4 mt-5 p-5">
+          <form action="/action_page.php">
+            <h3>Sigup</h3>
+            <div class="form-group">
+              <label for="email">Email address:-
+              </label>
+              <input type="email" class="form-control" placeholder="Enter email" id="email">
+            </div>
+            <div class="form-group">
+              <label for="pwd">Password:-</label>
+              <input type="password" class="form-control" placeholder="Enter password" id="pwd">
+            </div>
+            <div class="form-group">
+              <select name="option" id="location">
+                <option value="select location">Select Your location</option>
+                <option value="mumbai">Maharashtra</option>
+                <option value="up">Utter Pradesh</option>
+              </select>
+            </div>
+            <div class="form-group form-check">
+              <label class="form-check-label">
+                <input class="form-check-input" type="checkbox"> i have readed all terms & conditions
+              </label>
+            </div>
+            <button type="submit" class="btn btn-primary mt-2">Signup</button>
+            <p class="text-center mt-4">have a already account <a href="#">sign in</a></p>
+          </form>
+        </div>
+        <!-- signup page end -->
+    </header>
+    
+    <!-- spacial offer page start -->
+    
+    <section class="container">
+        <div class="text-center mt-5">
+          <h3>Spacial Offer</h3>
+          <h1>Buy 1 Get free Offer</h1>
+          <hr class="w-50 mx-auto">
+        </div>
+    
+        <div class="row">
+          <div class="col-lg-4 col-md-4 col-12">
+            <div class="container">
+              <div class="card daily_spacial">
+                <img class="card-img-top" src="/images/vegburger.jpg" alt="Card image" style="width:100%">
+                <div class="card-body">
+                  <h4 class="card-title">Cheg Burger</h4>
+                  <p class="card-text">Some example text some example text. <span class="font-weight-bold">199/-</span></p>
+                  <a href="#" class="btn btn-primary stretched-link" data-toggle="modal" data-target="#myModal">Order Now</a>
+                </div>
+              </div>
+            </div>        
+          </div>
+          
+          <div class="col-lg-4 col-md-4 col-12">
+            <div class="container">
+              <div class="card daily_spacial">
+                <img class="card-img-top" src="/images/tomato-pizza.jpg" alt="Card image" style="width:100%">
+                <div class="card-body">
+                  <h4 class="card-title">tomato-pizza</h4>
+                  <p class="card-text">Some example text some example text. <span class="font-weight-bold">199/-</span></p>
+                  <a href="#" class="btn btn-primary stretched-link" data-toggle="modal" data-target="#myModal">Order Now</a>
+                </div>
+              </div>
+            </div>        
+          </div>
+    
+          <div class="col-lg-4 col-md-4 col-12">
+            <div class="container">
+              <div class="card daily_spacial">
+                <img class="card-img-top" src="/images/chicken-pizza.jpg" alt="Card image" style="width:100%">
+                <div class="card-body">
+                  <h4 class="card-title">chicken-pizza</h4>
+                  <p class="card-text">Some example text some example text. <span class="font-weight-bold">199/-</span></p>
+                  <a href="#" class="btn btn-primary stretched-link" data-toggle="modal" data-target="#myModal">Order Now</a>
+                </div>
+              </div>
+            </div>        
+          </div>
+        </div>
+      </section>
+    
+      <!-- spacial offer page close  -->
+      <!-- modal page start -->
+
+  <section class="Centred_modal">
+    <div class="container">
+
+      <!-- The Modal -->
+      <div class="modal fade" id="myModal">
+        <div class="modal-dialog modal-dialog-centered">
+          <div class="modal-content">
+          
+            <!-- Modal Header -->
+            <div class="modal-header">
+              <h4 class="modal-title">Sigup First</h4>
+              <button type="button" class="close" data-dismiss="modal">&times;</button>
+            </div>
+            
+            <!-- Modal body -->
+            <div class="modal-body">
+              <form action="/action_page.php">
+                <div class="form-group">
+                  <label for="email">Email address:</label>
+                  <input type="email" class="form-control" placeholder="Enter email" id="email">
+                </div>
+                <div class="form-group">
+                  <label for="pwd">Password:</label>
+                  <input type="password" class="form-control" placeholder="Enter password" id="pwd">
+                </div>
+                <div class="form-group form-check">
+                  <label class="form-check-label">
+                    <input class="form-check-input" type="checkbox"> Remember me
+                  </label>
+                </div>
+                <button type="submit" class="btn btn-primary mt-2">Submit</button>
+              </form>
+            </div>
+            
+            <!-- Modal footer -->
+            <div class="modal-footer">
+              <button type="button" class="btn btn-primary" data-dismiss="modal">Close</button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- modal page end -->
+  <!-- about page start -->
+
+  <div class="container-fluid">
+  <div class="text-center mt-5">
+    <h1>About Us</h1>
+    <hr class="w-25 mx-auto">
+  </div>
+
+  <div class="row my-5">
+    <div class="col-lg-6 col-md-6 col-12">
+      <img src="/images/about.jpg" alt="About page" class="img-fluid">
+    </div>
+    <div class="col-lg-6 col-md-6 col-12">
+      <h4>it's simple dummy text</h4>
+      <hr>
+      <p>
+        Lorem, ipsum dolor sit amet consectetur adipisicing elit. Est incidunt labore, 
+        aliquid harum quibusdam corporis id aliquam velit aspernatur hic? Cum alias pariatur iure id, 
+        iste eaque eligendi quibusdam reiciendis!
+        Lorem, ipsum dolor sit amet consectetur adipisicing elit. Est incidunt labore, 
+        aliquid harum quibusdam corporis id aliquam velit aspernatur hic? Cum alias pariatur iure id, 
+        iste eaque eligendi quibusdam reiciendis!
+        Lorem, ipsum dolor sit amet consectetur adipisicing elit. Est incidunt labore, 
+        aliquid harum quibusdam corporis id aliquam velit aspernatur hic? Cum alias pariatur iure id, 
+        iste eaque eligendi quibusdam reiciendis!
+      </p>
+    </div>
+  </div>
+</div>
+
+<!-- about page end -->
+<!-- daily spacial page start -->
+
+<section class="spacail_page">
+  <div class="container">
+  <div class="text-center mt-5">
+    <h1>Daily Spacial</h1>
+    <hr class="w-25 mx-auto">
+  </div>
+
+  <div class="row">
+
+    <div class="col-lg-3 col-md=3 col-12 ">
+      <div class="card mx-2 daily_spacial">
+      <img src="/images/chicken-pizza.jpg" alt="Card image" style="width:100%" class="card-img-top">
+      <div class="card-body">
+        <h4 class="card-title">Cheaken Pizza</h4>
+        <p class="card-text">299/-</p>
+        <button class="btn btn-outline-success" data-toggle="modal" data-target="#myModal"> Order Now</button>
+        <select name="Quality" id="Quality">
+          <option>1</option>
+          <option>2</option>
+          <option>3</option>
+          <option>4</option>
+        </select>
+      </div>
+    </div>
+    </div>
+
+    <div class="col-lg-3 col-md=3 col-12 ">
+      <div class="card mx-2 daily_spacial">
+      <img src="/images/vegburger.jpg" alt="Card image" style="width:100%" class="card-img-top">
+      <div class="card-body">
+        <h4 class="card-title">Cheaken Pizza</h4>
+        <p class="card-text">399/-</p>
+        <button class="btn btn-outline-success" data-toggle="modal" data-target="#myModal"> Order Now</button>
+        <select name="Quality" id="Quality">
+          <option>1</option>
+          <option>2</option>
+          <option>3</option>
+          <option>4</option>
+        </select>
+      </div>
+    </div>
+    </div>
+
+    <div class="col-lg-3 col-md=3 col-12 ">
+      <div class="card mx-2 daily_spacial">
+      <img src="/images/vegburger2.jpg" alt="Card image" style="width:100%" class="card-img-top">
+      <div class="card-body">
+        <h4 class="card-title">Cheaken Pizza</h4>
+        <p class="card-text">499/-</p>
+        <button class="btn btn-outline-success" data-toggle="modal" data-target="#myModal"> Order Now</button>
+        <select name="Quality" id="Quality">
+          <option>1</option>
+          <option>2</option>
+          <option>3</option>
+          <option>4</option>
+        </select>
+      </div>
+    </div>
+    </div>
+
+    <div class="col-lg-3 col-md=3 col-12 ">
+      <div class="card mx-2 daily_spacial">
+      <img src="/images/chicken-pizza.jpg" alt="Card image" style="width:100%" class="card-img-top">
+      <div class="card-body">
+        <h4 class="card-title">Cheaken Pizza</h4>
+        <p class="card-text">699/-</p>
+        <button class="btn btn-outline-success" data-toggle="modal" data-target="#myModal"> Order Now</button>
+        <select name="Quality" id="Quality">
+          <option>1</option>
+          <option>2</option>
+          <option>3</option>
+          <option>4</option>
+        </select>
+      </div>
+    </div>
+    </div>
+
+
+    <div class="col-lg-3 col-md=3 col-12 my-3 ">
+      <div class="card mx-2 daily_spacial">
+      <img src="/images/chicken-pizza.jpg" alt="Card image" style="width:100%" class="card-img-top">
+      <div class="card-body">
+        <h4 class="card-title">Cheaken Pizza</h4>
+        <p class="card-text">299/-</p>
+        <button class="btn btn-outline-success" data-toggle="modal" data-target="#myModal"> Order Now</button>
+        <select name="Quality" id="Quality">
+          <option>1</option>
+          <option>2</option>
+          <option>3</option>
+          <option>4</option>
+        </select>
+      </div>
+    </div>
+    </div>
+
+    <div class="col-lg-3 col-md=3 col-12 my-3 ">
+      <div class="card mx-2 daily_spacial">
+      <img src="/images/chicken-pizza.jpg" alt="Card image" style="width:100%" class="card-img-top">
+      <div class="card-body">
+        <h4 class="card-title">Cheaken Pizza</h4>
+        <p class="card-text">399/-</p>
+        <button class="btn btn-outline-success" data-toggle="modal" data-target="#myModal"> Order Now</button>
+        <select name="Quality" id="Quality">
+          <option>1</option>
+          <option>2</option>
+          <option>3</option>
+          <option>4</option>
+        </select>
+      </div>
+    </div>
+    </div>
+
+    <div class="col-lg-3 col-md=3 col-12 my-3 ">
+      <div class="card mx-2 daily_spacial">
+      <img src="/images/chicken-pizza.jpg" alt="Card image" style="width:100%" class="card-img-top">
+      <div class="card-body">
+        <h4 class="card-title">Cheaken Pizza</h4>
+        <p class="card-text">499/-</p>
+        <button class="btn btn-outline-success" data-toggle="modal" data-target="#myModal"> Order Now</button>
+        <select name="Quality" id="Quality">
+          <option>1</option>
+          <option>2</option>
+          <option>3</option>
+          <option>4</option>
+        </select>
+      </div>
+    </div>
+    </div>
+
+    <div class="col-lg-3 col-md=3 col-12 my-3 ">
+      <div class="card mx-2 daily_spacial">
+      <img src="/images/chicken-pizza.jpg" alt="Card image" style="width:100%" class="card-img-top">
+      <div class="card-body">
+        <h4 class="card-title">Cheaken Pizza</h4>
+        <p class="card-text">699/-</p>
+        <button class="btn btn-outline-success" data-toggle="modal" data-target="#myModal"> Order Now</button>
+        <select name="Quality" id="Quality">
+          <option>1</option>
+          <option>2</option>
+          <option>3</option>
+          <option>4</option>
+        </select>
+      </div>
+    </div>
+    </div>
+    <a href="#" class="text-right">Show more</a>
+  </div>
+</div>
+</section>
+
+<!-- daily spacial page end -->
+<!-- our services page start -->
+
+<div class="container-fluid services_page text-white mb-4">
+  <div class="text-center mt-5 mb-4">
+    <h1>Services</h1>
+    <hr class="w-25 mx-auto">
+  </div>
+
+  <div class="row services">
+    <div class="col-lg-4 col-md-4 col-12 ">
+      <div class="fontawesome text-center"><i class="fa fa-4x fa-thumbs-up pb-4"></i>
+        <h4>No Minimum Order</h4>
+        <p class="text-center">
+          Order in for yourself or for the group, with no restrictions on order value
+          </p>
+      </div>
+    </div>
+
+    <div class="col-lg-4 col-md-4 col-12">
+      <div class="fontawesome text-center"><i class="fa fa-4x fa-globe pb-4"></i>
+        <h4>Live Order Tracking</h4>
+        <p class="text-center">
+          Know where your order is at all times, from the restaurant to your doorstep
+          </p>
+      </div>
+    </div>
+
+    <div class="col-lg-4 col-md-4 col-12">
+      <div class="fontawesome text-center"><i class="fa fa-4x fa-motorcycle pb-4"></i>
+        <h4>Lightning-Fast Delivery</h4>
+        <p class="text-center">
+          Experience Swiggy's superfast delivery for food delivered fresh & on time
+          </p>
+      </div>
+    </div>
+  
+  </div>
+</div>
+
+<!-- services page end -->
+<!-- contect us page start -->
+
+<section class="contet-us container ">
+  <div class="text-center mt-5 mb-4">
+    <h1>Contect Us</h1>
+    <hr class="w-25 mx-auto">
+  </div>
+
+  <div class="contect_us w-50 mx-auto">
+    <form action="/action_page.php">
+      <div class="form-group">
+      <label for="Name">Enter Your Name:-</label>
+      <input type="text" class="form-control" placeholder="Enater your name" id="name">
+    </div>
+  
+    <div class="form-group">
+      <label for="Email">Enter Email:-</label>
+      <input type="text" class="form-control" placeholder="Enater your Email " id="Email">
+    </div>
+    <div class="form-group">
+      <select>
+      <option value="issue">Select message type</option>
+        <option value="payment issue">Payment Issue</option>
+        <option value="not booked">Not Booked</option>
+        <option value="Other">Other</option>
+    </select>
+    </div>
+    <div class="form-group">
+      <label for="Name">Enter Your Phone Number:-</label>
+      <textarea name="message" id="message" cols="30" rows="5" class="form-control" placeholder="Enter message"></textarea>
+    </div>
+    <input type="button" class="btn btn-primary mb-4" value="Send">
+    </form>
+  </div>
+</section>
+
+<footer class="text-center text-white pt-3">
+<p> &copy; Copyright <a href="#">Foodonline</a> All Right Resarved</p>
+</footer>
+</body>
+</html>
